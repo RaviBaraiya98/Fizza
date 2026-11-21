@@ -1,0 +1,150 @@
+/* Footer - Dark Theme */
+.footer {
+    background-color: #080810;
+    color: #999;
+    padding: 60px 0 40px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 0;
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.3), transparent);
+    margin-bottom: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-section.about {
+    flex: 1.5;
+    min-width: 240px;
+}
+
+.footer-logo {
+    font-size: 2em;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.footer-tagline {
+    font-size: 0.85em;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: rgba(255, 107, 53, 0.15);
+    border-color: #ff6b35;
+    color: #ff6b35;
+    transform: translateY(-2px);
+}
+
+.footer-heading {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #ff6b35;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-section.links ul,
+.footer-section.company ul,
+.footer-section.contact ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-section.links ul li a,
+.footer-section.company ul li a {
+    color: #777;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover,
+.footer-section.company ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-section.contact ul li {
+    color: #777;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-icon {
+    color: #ff6b35;
+    font-size: 0.9em;
+    width: 18px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        padding: 0 24px;
+        gap: 30px;
+    }
+    .footer-section {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 0 16px;
+    }
+    .footer-logo {
+        font-size: 1.6em;
+    }
+    .footer-heading {
+        font-size: 0.7em;
+    }
+}

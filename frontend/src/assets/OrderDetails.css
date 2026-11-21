@@ -1,0 +1,289 @@
+/* Order Details - Dark Theme */
+.order-detail-page {
+    background-color: #0a0a0f;
+    min-height: 80vh;
+    padding: 40px 20px 80px;
+}
+
+.order-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+.od-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.od-badge {
+    display: inline-block;
+    background: rgba(255, 107, 53, 0.12);
+    border: 1px solid rgba(255, 107, 53, 0.3);
+    color: #ff6b35;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.od-progress-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b35, transparent);
+    border-radius: 2px;
+}
+
+.od-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.od-order-id {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 36px;
+}
+
+/* Progress Stepper */
+.od-stepper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: rgba(18, 18, 28, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 32px 28px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.od-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+
+.od-step-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.od-step.active .od-step-icon {
+    background: rgba(255, 107, 53, 0.2);
+    border-color: #ff6b35;
+    color: #ff6b35;
+}
+
+.od-step-label {
+    font-size: 0.65em;
+    color: #555;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.od-step.active .od-step-label {
+    color: #ff6b35;
+}
+
+/* Connecting lines */
+.od-step-line {
+    position: absolute;
+    top: 24px;
+    left: calc(50% + 24px);
+    width: calc(100% - 48px);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+}
+
+.od-step-line.active {
+    background: #ff6b35;
+}
+
+/* Section Title */
+.od-section-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+/* Summary Card */
+.od-summary-card {
+    background: rgba(18, 18, 28, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+}
+
+.od-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.od-summary-row:last-child {
+    border-bottom: none;
+}
+
+.od-summary-label {
+    font-size: 0.8em;
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.od-summary-value {
+    font-size: 0.9em;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+/* Items List */
+.od-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.od-item-card {
+    display: flex;
+    align-items: center;
+    background: rgba(18, 18, 28, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    padding: 16px 20px;
+    gap: 16px;
+}
+
+.od-item-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: rgba(255, 107, 53, 0.08);
+}
+
+.od-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.od-item-name {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.od-item-size {
+    font-size: 0.78em;
+    color: #888;
+}
+
+.od-item-qty {
+    font-size: 0.78em;
+    color: #666;
+}
+
+.od-item-price {
+    font-size: 1.05em;
+    font-weight: 700;
+    color: #ff6b35;
+}
+
+/* Total Bar */
+.od-total-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(18, 18, 28, 0.6);
+    border: 1px solid rgba(255, 107, 53, 0.15);
+    border-radius: 14px;
+    padding: 18px 24px;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+.od-total-amount {
+    font-size: 1.3em;
+    font-weight: 800;
+    color: #ff6b35;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .order-detail-page {
+        padding: 24px 16px 60px;
+    }
+    .od-title {
+        font-size: 1.6em;
+    }
+    .od-stepper {
+        padding: 24px 16px;
+    }
+    .od-step-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9em;
+    }
+    .od-step-label {
+        font-size: 0.55em;
+    }
+    .od-step-line {
+        top: 19px;
+        left: calc(50% + 19px);
+        width: calc(100% - 38px);
+    }
+}
+
+@media (max-width: 480px) {
+    .od-step-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8em;
+    }
+    .od-step-label {
+        font-size: 0.48em;
+    }
+    .od-step-line {
+        top: 16px;
+        left: calc(50% + 16px);
+        width: calc(100% - 32px);
+    }
+    .od-item-img {
+        width: 40px;
+        height: 40px;
+    }
+}
