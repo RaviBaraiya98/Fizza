@@ -25,7 +25,7 @@
 
 ## 🚀 Live Link
 
-🔗 [fizza-app.vercel.app](https://fizza-app.vercel.app)
+🔗 [fizza-app.vercel.app](https://fizza-smoky.vercel.app/)
 
 ---
 
